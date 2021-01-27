@@ -1,0 +1,503 @@
+.content {
+    display: none;
+}
+
+.preload {
+    margin: 0;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    z-index: 99;
+}
+
+/*body and margin */
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+* {
+    margin: 0;
+    padding: 0;
+    user-select: none;
+}
+
+
+body {
+    font-family: "roboto", sans-serif;
+}
+
+/*nav starts*/
+.container-1 nav.desk,
+.container-1 nav.mob {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: white;
+    height: 80px;
+    z-index: 1;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14);
+
+}
+
+nav.desk ul {
+    list-style: none;
+    width: 40%;
+    height: 60px;
+    margin: 0px 720px;
+    margin-top: -85px;
+}
+
+nav.desk ul li {
+    margin-top: 10px;
+}
+
+nav.desk ul li {
+    width: 20%;
+    float: left;
+    text-align: center;
+    line-height: 60px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+nav.desk ul li:hover,
+nav.mob ul li:hover {
+    color: red;
+}
+
+nav.desk ul li.active,
+nav.mob ul li.active {}
+
+nav ul li a {
+    color: #000000;
+    text-decoration: none;
+
+}
+
+/*nav ends*/
+
+
+/*underline*/
+.underline-custom:hover::after {
+    color: white;
+    cursor: pointer;
+    content: '';
+    height: 3px;
+    width: 80%;
+    background: blue;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+
+}
+
+.underline-custom::after {
+
+    content: '';
+    height: 3px;
+    width: 80%;
+    background: #E80003;
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+}
+
+.underline-custom {
+    color: #BB1A1C;
+    position: relative;
+    margin-top: 30px;
+    margin-top: 30px;
+
+}
+
+
+.know:hover::after {
+    color: white;
+    cursor: pointer;
+    content: '';
+    height: 3px;
+    width: 80%;
+    background: blue;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+
+}
+
+.know::after {
+
+    content: '';
+    height: 3px;
+    width: 80%;
+    background: #E80003;
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+}
+
+.know {
+    color: #BB1A1C;
+    position: relative;
+    margin-top: 30px;
+    margin-top: 30px;
+
+}
+
+
+.underline-soln:hover::after {
+    color: white;
+    cursor: pointer;
+    content: '';
+    height: 4px;
+
+    background: #071C56;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transition-duration: 0.5s;
+
+}
+
+.underline-soln::after {
+
+    content: '';
+    height: 4px;
+    width: 76%;
+    background: #FFF;
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+}
+
+.underline-soln {
+    color: black;
+    position: relative;
+    margin-top: 30px;
+    margin-top: 30px;
+
+}
+
+/*underline ends*/
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    padding: 12px 16px;
+    z-index: 1;
+    height: 55vh;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+.mob,
+.hamburger-btn {
+    display: none;
+}
+
+@media screen and (max-width: 500px) {
+    .logo {
+        position: fixed;
+        right: 20px;
+        top: 15px;
+        font-size: 35px;
+        color: #000000;
+        cursor: pointer;
+
+    }
+}
+
+
+@media screen and (max-width: 700px) {
+
+    .logo {
+        display: block;
+    }
+
+    nav.mob,
+    .hamburger-btn {
+        display: block;
+    }
+
+    .hamburger-btn {
+        position: relative;
+    }
+
+    .hamburger-btn .fa-bars,
+    .hamburger-btn .fa-times {
+        position: fixed;
+        right: 25px;
+        top: 15px;
+        font-size: 35px;
+        color: #000000;
+        cursor: pointer;
+
+    }
+
+
+
+    .mob ul {
+        margin-top: 60px;
+        background: #E8DBDB;
+        display: none;
+    }
+
+    .mob li {
+        text-align: center;
+        padding: 20px;
+        text-transform: uppercase;
+        cursor: pointer;
+    }
+
+    .mob ul.active {
+        display: block;
+    }
+
+    .mob ul li a:hover {
+        color: darkblue;
+        font-weight: 700;
+    }
+}
+
+
+
+
+/*content*/
+
+.button {
+    height: 40px;
+    width: 35%;
+    color: black;
+    background-color: white;
+    border: 1px solid #146C18;
+}
+
+.button:hover {
+    color: white;
+    background: #146C18;
+    transition-duration: 1.4s;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    padding: 12px 16px;
+    z-index: 1;
+    height: 55vh;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+.fa-instagram {
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    cursor: pointer;
+    color: white;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, .25);
+    transform: scale(1.1);
+    margin-right: 10px;
+    font-size: 30px;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.fa-twitter {
+
+    background: #00acee;
+    cursor: pointer;
+    color: white;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, .25);
+    transform: scale(1.1);
+    margin-right: 10px;
+    font-size: 30px;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.fa-linkedin {
+    background: #0077B5;
+    cursor: pointer;
+    color: white;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, .25);
+    transform: scale(1.1);
+    margin-right: 10px;
+    font-size: 30px;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.fa-whatsapp {
+
+    background: #25D366;
+    cursor: pointer;
+    color: white;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, .25);
+    transform: scale(1.1);
+    margin-right: 10px;
+    font-size: 30px;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.fa-facebook {
+    background: #3b5999;
+    cursor: pointer;
+    color: white;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, .25);
+    transform: scale(1.1);
+    margin-right: 10px;
+    font-size: 30px;
+    border-radius: 50%;
+    padding: 10px;
+    padding: 10px;
+    padding-left: 13px;
+    padding-right: 14px;
+}
+
+
+
+.textBtn {
+    border-bottom: 2px solid #adadad;
+
+    margin: 30px 0;
+
+    font-size: 15px;
+    width: 85%;
+}
+
+.textBtn input {
+    font-size: 15px;
+    color: #333;
+    border: none;
+    width: 100%;
+    outline: none;
+    background: none;
+    padding: 0 5px;
+    height: 50px;
+
+}
+
+.textBtn textarea {
+    font-size: 15px;
+    color: #333;
+    border: none;
+    width: 100%;
+    outline: none;
+    background: none;
+    padding: 0 5px;
+    height: 50px;
+
+}
+
+.logo-maker {
+    margin-left: 90px;
+    margin-top: 10px;
+}
+
+
+.none-decoration {
+    text-decoration: none;
+}
+
+.container-margin {
+    margin-top: 120px;
+}
+
+.fa-home {
+    font-size: 30px;
+}
+
+.row-bg {
+    background: #FFFFFF;
+}
+
+.send-header {
+    margin-top: 40px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.button-sub-reset {
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+
+.submit-button {
+    height: 40px;
+    width: 35%;
+    color: white;
+    background-color: #146C18;
+    border: none;
+}
+
+.touch-header {
+    font-weight: 300px;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.touch-context {
+    font-size: 20px;
+    font-weight: 20px;
+}
+
+.fa-phone {
+    font-size: 18px;
+    color: darkgreen;
+}
+
+.fa-location-arrow {
+    font-size: 18px;
+    color: darkred;
+}
+
+.fa-envelope {
+    font-size: 18px;
+    color: navy;
+}
+
+.para-touch {
+    color: black;
+    float: right;
+}
+
+.media-header {
+    margin-top: 15px;
+    opacity: .5;
+}
+
+.footer-margin {
+    margin-top: 60px;
+}
+
+.footer-row {
+    background-color: #3f3f3f;
+    color: white;
+}
+
+.hr-footer {
+    background-color: aliceblue;
+}

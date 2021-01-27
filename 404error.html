@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Be right back.</title>
+    
+	<link rel="icon" type="image/gif" href="./img/body/information-point-circle-vector-icon-1.png" />
+    <!-------------- Font awesome------------------------>
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:100" rel="stylesheet" type="text/css">
+    
+    <link rel="stylesheet" href="./css/body/404error.css">
+	<link rel="stylesheet" href="./css/body/articles.css">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-------------- Bootstrap online linking------------->
+   
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+   
+    <!-------------Bootstrap Javascript----------------->
+   
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+   
+
+    <!--------------Custom CSS-------------------------->
+    
+     <link rel="stylesheet" href="../css/body/main.css">
+     
+      
+
+    <script>
+        $(document).ready(function() {
+            $(".hamburger-btn .fa-times").hide();
+
+            $(".hamburger-btn .fa-bars").click(function() {
+                $(this).hide();
+                $(".hamburger-btn .fa-times").show();
+                $(".mob ul").addClass("active");
+            });
+
+            $(".hamburger-btn .fa-times").click(function() {
+                $(this).hide();
+                $(".hamburger-btn .fa-bars").show();
+                $(".mob ul").removeClass("active");
+            });
+        });
+    </script>
+	
+	<style>
+	 .dropdown-mob {
+            position: relative;
+
+
+        }
+
+
+        .dropdown-content-mob {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 200px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            padding: 12px 16px;
+            z-index: 1;
+            height: 55vh;
+        }
+
+        .dropdown-mob:hover .dropdown-content-mob {
+            display: block;
+        }
+
+        @media screen and(max-width:700px) {
+            .btn-media {
+                color: white;
+                background: #000;
+                border: none;
+                padding-top: 8px;
+                padding-bottom: 8px;
+                padding-right: 20px;
+                padding-left: 20px;
+                font-weight: 700;
+                width: 100px;
+            }
+        }
+
+	</style>
+   
+</head>
+
+<body>
+<div class="preload">
+    	<img src="./img/body/h.gif" height="200" width="300" />
+    </div>
+    <!-- navbar begins-->
+
+    <div class="container-1">
+
+
+        <nav class="desk content">
+
+            <h2 class="" style="margin-left: 90px;margin-top:10px;"><img src="./img/body/logo.png" alt="" height="70" width="75	"></h2>
+
+            <ul style="font-size: 15px;">
+
+                <li><a style="text-decoration: none;" href="./index"><i style="font-size: 30px;" class="fa fa-home"></i></a></li>
+                <li><a class="underline-soln" style="text-decoration: none;" href="./pages/articles">Articles</a></li>
+
+                <li class="dropdown">
+                    <span><a class="underline-soln" style="text-decoration: none;" href="../pages/">Tools</a></span>
+                    <div class="dropdown-content">
+                        <a href="./pages/seotools">
+                            <p>SEO Tools</p>
+                        </a>
+                        <a href="./seotools.html">
+                            <p>Hardware Tools</p>
+                        </a>
+                        <a href="./seotools.html">
+                            <p>Software Tools</p>
+                        </a>
+                        <a href="./seotools.html">
+                            <p>Database Resource</p>
+                        </a>
+                        <a href="./seotools.html">
+                            <p>Programming Ideas</p>
+                        </a>
+
+
+                    </div>
+
+                </li>
+                <li class="dropdown">
+                    <span><a class="underline-soln" style="text-decoration: none;" href="../pages/posts">Post</a></span>
+                    <div class="dropdown-content">
+                        <a href="./404error.html">
+                            <p>Software</p>
+                        </a>
+                        <a href="./pages/hardware">
+                            <p>Hardware</p>
+                        </a>
+                        <a href="./404error.html">
+                            <p>Networking</p>
+                        </a>
+                        <a href="./pages/database">
+                            <p>Database</p>
+                        </a>
+                        <a href="./404error.html">
+                            <p>Web Technologies</p>
+                        </a>
+                    </div>
+
+                </li>
+
+                <li><a class="underline-soln" style="text-decoration: none;" href="./pages/contact">Contact</a></li>
+
+            </ul>
+        </nav>
+
+        <nav class="mob">
+            <div class="hamburger-btn">
+                <i class="fa fa-bars" aria-hidden="true"></i>
+                <i class="fa fa-times" aria-hidden="true"></i>
+            </div>
+
+           <ul style="font-size: 15px;">
+
+                    <li><a style="text-decoration: none;color:darkred;" href="./index.html"><i style="font-size: 30px;" class="fa fa-home"></i></a></li>
+                    <li><a class="underline-soln" style="text-decoration: none;" href="./pages/articles.html">Articles</a></li>
+                    <li class="dropdown-mob">
+                        <span><a class="underline-soln" style="text-decoration: none;" href="./pages/posts">Tools</a></span>
+                        <div class="dropdown-content-mob">
+                            <a href="./pages/seotools.html">
+                                <p>SEO Tools</p>
+                            </a>
+                            <a href="./otools.html">
+                                <p>Hardware Tools</p>
+                            </a>
+                            <a href="./seools.html">
+                                <p>Software Tools</p>
+                            </a>
+                            <a href="./stools.html">
+                                <p>Database Resource</p>
+                            </a>
+                            <a href="./tools.html">
+                                <p>Programming Ideas</p>
+                            </a>
+
+
+                        </div>
+
+                    </li>
+
+                    <li class="dropdown-mob">
+                        <span><a class="underline-soln" style="text-decoration: none;" href="./pages/post">Post</a></span>
+                        <div class="dropdown-content-mob">
+                            <a href="./404eor.html">
+                                <p>Software</p>
+                            </a>
+                            <a href="./pages/hardware.html">
+                                <p>Hardware</p>
+                            </a>
+                            <a href="./4error.html">
+                                <p>Networking</p>
+                            </a>
+                            <a href="./pages/database">
+                                <p>Database</p>
+                            </a>
+                            <a href="./4error.html">
+                                <p>Web Technologies</p>
+                            </a>
+                        </div>
+
+                    </li>
+
+                    <li><a class="underline-soln" style="text-decoration: none;" href="./pages/contact.html">Contact</a></li>
+
+                </ul>
+                </ul>
+                </ul>
+        </nav>
+    </div>
+    <!--  Navbar ends-->
+
+
+    <div class="container">
+        <div class="content">
+            <div style="font-size: 60px;opacity: 0.5;" class="title">Page not Found</div>
+        </div>
+    </div>
+    
+    </script>
+    
+
+    <script>
+        	$(function() {
+		$(".preload").fadeOut(500, function() {
+			$(".content").fadeIn(100);
+		});
+	});
+        
+        
+        
+      
+    </script>
+</body>
+
+</html>

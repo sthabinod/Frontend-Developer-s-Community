@@ -1,0 +1,21 @@
+#User-Agent:*
+#Disallow:/
+#//does not crawl any 
+
+
+
+User:Agent*
+Disallow:
+#allow all the content 
+
+#User:Agent*
+#Disallow:/Wp-admin/
+#Disallow:/Wp tpm file/
+
+#//file not allowed and folder also no allowed
+
+
+User-agent: *
+Disallow: 
+Disallow: /cgi-bin/
+Sitemap: http://infotechsoln.com/sitemap.xml

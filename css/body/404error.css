@@ -1,0 +1,44 @@
+    /*html body*/
+    html,
+    body {
+        height: 100%;
+    }
+
+    body {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        color: #B0BEC5;
+        display: table;
+        font-weight: 400;
+
+    }
+
+    /*Container for the content*/
+
+    .container {
+        text-align: center;
+        display: table-cell;
+        vertical-align: middle;
+    }
+
+    /*loader*/
+
+
+    .content {
+        display: none;
+    }
+
+    .preload {
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%);
+        z-index: 99;
+    }
+.title
+{
+	font-size: 30px;
+}
